@@ -8,23 +8,23 @@
 // ios: PermissionGroupCalendar
 // Info.plist: NSCalendarsUsageDescription
 // dart: PermissionGroup.calendar
-#ifndef PERMISSION_EVENTS
-    #define PERMISSION_EVENTS 1
-#endif
+//#ifndef PERMISSION_EVENTS
+//    #define PERMISSION_EVENTS 1
+//#endif
 
 // ios: PermissionGroupReminders
 // Info.plist: NSRemindersUsageDescription
 // dart: PermissionGroup.reminders
-#ifndef PERMISSION_REMINDERS
-    #define PERMISSION_REMINDERS 1
-#endif
+//#ifndef PERMISSION_REMINDERS
+//    #define PERMISSION_REMINDERS 1
+//#endif
 
 // ios: PermissionGroupContacts
 // Info.plist: NSContactsUsageDescription
 // dart: PermissionGroup.contacts
-#ifndef PERMISSION_CONTACTS
-    #define PERMISSION_CONTACTS 1
-#endif
+//#ifndef PERMISSION_CONTACTS
+//    #define PERMISSION_CONTACTS 1
+//#endif
 
 // ios: PermissionGroupCamera
 // Info.plist: NSCameraUsageDescription
@@ -43,9 +43,9 @@
 // ios: PermissionGroupSpeech
 // Info.plist: NSSpeechRecognitionUsageDescription
 // dart: PermissionGroup.speech
-#ifndef PERMISSION_SPEECH_RECOGNIZER
-    #define PERMISSION_SPEECH_RECOGNIZER 1
-#endif
+//#ifndef PERMISSION_SPEECH_RECOGNIZER
+//    #define PERMISSION_SPEECH_RECOGNIZER 1
+//#endif
 
 // ios: PermissionGroupPhotos
 // Info.plist: NSPhotoLibraryUsageDescription
@@ -77,29 +77,20 @@
 // ios: PermissionGroupSensors
 // Info.plist: NSMotionUsageDescription
 // dart: PermissionGroup.sensors
-#ifndef PERMISSION_SENSORS
-    #define PERMISSION_SENSORS 1
-#endif
+//#ifndef PERMISSION_SENSORS
+//    #define PERMISSION_SENSORS 1
+//#endif
 
 typedef NS_ENUM(int, PermissionGroup) {
     PermissionGroupCalendar = 0,
     PermissionGroupCamera,
-    PermissionGroupContacts,
     PermissionGroupLocation,
     PermissionGroupLocationAlways,
     PermissionGroupLocationWhenInUse,
     PermissionGroupMediaLibrary,
     PermissionGroupMicrophone,
-    PermissionGroupPhone,
     PermissionGroupPhotos,
-    PermissionGroupReminders,
-    PermissionGroupSensors,
-    PermissionGroupSms,
-    PermissionGroupSpeech,
-    PermissionGroupStorage,
-    PermissionGroupIgnoreBatteryOptimizations,
     PermissionGroupNotification,
-    PermissionGroupAccessMediaLocation,
     PermissionGroupUnknown,
 };
 

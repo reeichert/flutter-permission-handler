@@ -23,8 +23,8 @@ Future<bool> openAppSettings() => _handler.openAppSettings();
 /// Actions that can be executed on a permission.
 extension PermissionActions on Permission {
   /// The current status of this permission.
-  /// 
-  /// The Android-only [PermissionStatus.permanentlyDenied] status will only be 
+  ///
+  /// The Android-only [PermissionStatus.permanentlyDenied] status will only be
   /// calculated if the active context is an Activity. If it isn't,
   /// [PermissionStatus.denied] will be returned.
   Future<PermissionStatus> get status => _handler.checkPermissionStatus(this);
@@ -105,6 +105,5 @@ extension PermissionListActions on List<Permission> {
   /// been granted before.
   ///
   /// Returns a [Map] containing the status per requested [Permission].
-  Future<Map<Permission, PermissionStatus>> request() =>
-      _handler.requestPermissions(this);
+  Future<Map<Permission, PermissionStatus>> request() => _handler.requestPermissions(this);
 }
